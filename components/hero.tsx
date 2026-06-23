@@ -14,14 +14,14 @@ export function Hero() {
         alt="Basilio Astulez Duque"
       />
       <div className="section-shell relative z-10 flex min-h-screen items-end pb-16 pt-28 md:items-center md:pb-0">
-        <div className="max-w-[560px] md:ml-0 lg:max-w-[620px]">
+        <div className="hero-copy max-w-[560px] md:ml-0 lg:max-w-[620px]">
           <p className="mb-5 text-sm uppercase tracking-[0.34em] text-[#C8A96B]">
             {t.hero.kicker}
           </p>
           <h1 className="font-display text-5xl leading-[0.98] text-balance md:text-7xl lg:text-8xl">
             {t.hero.title}
           </h1>
-          <p className="mt-7 max-w-lg text-lg leading-8 text-white/78 md:text-xl">
+          <p className="mt-7 max-w-lg text-lg leading-8 text-white/88 md:text-xl">
             {t.hero.body}
           </p>
           <div className="mt-10 flex flex-wrap gap-4">

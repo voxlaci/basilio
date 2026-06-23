@@ -50,9 +50,18 @@ body {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(17, 17, 17, 0.9), rgba(17, 17, 17, 0.58) 34%, rgba(17, 17, 17, 0.08) 58%, rgba(17, 17, 17, 0.12)),
-    linear-gradient(0deg, rgba(17, 17, 17, 0.68), transparent 42%),
+    linear-gradient(90deg, rgba(17, 17, 17, 0.94), rgba(17, 17, 17, 0.66) 34%, rgba(17, 17, 17, 0.12) 58%, rgba(17, 17, 17, 0.08)),
+    linear-gradient(0deg, rgba(17, 17, 17, 0.74), transparent 46%),
     radial-gradient(circle at 62% 34%, rgba(247, 246, 242, 0.12), transparent 28%);
+}
+
+.hero-copy {
+  position: relative;
+  border-left: 1px solid rgba(200, 169, 107, 0.55);
+  background: linear-gradient(90deg, rgba(17, 17, 17, 0.74), rgba(17, 17, 17, 0.42) 68%, transparent);
+  padding: 28px 30px;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.62);
+  backdrop-filter: blur(1.5px);
 }
 
 .media-grain {
