@@ -48,7 +48,7 @@ body {
   content: "";
   position: absolute;
   left: 3px;
-  width: 82px;
+  width: 86px;
   bottom: -5px;
   height: 1.5px;
   background: linear-gradient(90deg, rgba(200, 169, 107, 0), rgba(200, 169, 107, 0.82) 18%, rgba(200, 169, 107, 0.56) 82%, rgba(200, 169, 107, 0));
@@ -56,14 +56,14 @@ body {
 }
 
 .signature-hand {
-  width: 62px;
-  height: 34px;
+  width: 82px;
+  height: 46px;
   color: #c8a96b;
   flex: 0 0 auto;
-  margin-bottom: -7px;
-  margin-left: -11px;
+  margin-bottom: -13px;
+  margin-left: -17px;
   opacity: 0.96;
-  transform: translateY(2px) rotate(3deg);
+  transform: translateY(3px) rotate(2deg);
   transform-origin: left bottom;
 }
 

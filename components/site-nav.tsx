@@ -10,72 +10,72 @@ function WritingHandMark() {
   return (
     <svg
       className="signature-hand"
-      viewBox="0 0 92 50"
+      viewBox="0 0 120 72"
       aria-hidden="true"
       focusable="false"
     >
       <path
-        d="M14 34c5.8-7.8 13.3-8.8 19.3-3.6 4.2 3.7 9.4 4.2 14.8.4 4.2-2.9 8.3-3 12.4-.4"
-        fill="rgba(200,169,107,.12)"
+        d="M18 48c6.2-12.4 15.8-15 25.4-7.1 5.2 4.3 11.5 4.5 17.8.6 5.7-3.5 12.3-3.3 18.9 1.1l-5.6 11.6c-14.7 7.1-31.7 7-50.8-.2-4.4-1.7-6.3-3.6-5.7-6Z"
+        fill="#F7F6F2"
         stroke="currentColor"
-        strokeWidth="3.1"
+        strokeWidth="3.2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
-        d="M23.5 32.7c-1.8-6.9 2-12.2 7.7-10.6 3.8 1.1 5.1 5.6 2 10"
-        fill="none"
+        d="M31.5 42.4c-3.6-8.8.9-18.4 8.6-17.1 5 .9 7.7 6.5 4.8 14.7"
+        fill="#F7F6F2"
         stroke="currentColor"
-        strokeWidth="3"
+        strokeWidth="3.2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
-        d="M34 31.8c-.5-6.9 4.3-10.2 8.8-7.1 2.5 1.7 3 4.7 1.7 7.2"
-        fill="none"
+        d="M45.2 39.4c-1.9-9.5 3.5-17.2 10.2-14.2 4.2 1.9 5.4 7.2 2.3 14.8"
+        fill="#F7F6F2"
         stroke="currentColor"
-        strokeWidth="3"
+        strokeWidth="3.2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
-        d="M44.4 29.6c1.5-4.7 5.9-6.4 9.4-3.6 2.4 1.9 2.9 5 1.4 7.8"
-        fill="none"
+        d="M59.5 40.1c-.9-7.9 4.8-13.2 10.3-9.7 3.3 2.1 4.2 6.2 2.2 11.1"
+        fill="#F7F6F2"
         stroke="currentColor"
-        strokeWidth="3"
+        strokeWidth="3.2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
-        d="M52.4 25.7 78.6 7.5l6.2 8.1-28.1 17.8"
-        fill="none"
+        d="M68.5 42.8c2.4-7 9.8-8.6 14.3-2.6"
+        fill="#F7F6F2"
         stroke="currentColor"
-        strokeWidth="2.6"
+        strokeWidth="3.2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
-        d="m78.6 7.5 8.8-3.2-2.6 11.3"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2.6"
-        strokeLinecap="round"
+        d="M52 33.6 96.6 8.5l7.2 11.3-47.5 25.7Z"
+        fill="#111111"
+        stroke="#C8A96B"
+        strokeWidth="2.4"
+      />
+      <path
+        d="m96.6 8.5 13-4.5-5.8 15.8Z"
+        fill="#F7F6F2"
+        stroke="#C8A96B"
+        strokeWidth="2.4"
         strokeLinejoin="round"
       />
       <path
-        d="M64.3 16.8 70.3 25"
+        d="M72 22.1 78.5 34"
         fill="none"
-        stroke="currentColor"
-        strokeWidth="1.8"
+        stroke="#C8A96B"
+        strokeWidth="2"
         strokeLinecap="round"
       />
-      <path
-        d="M54.8 34.3c7.7 2.1 14.6.9 20.5-3.3"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2.6"
-        strokeLinecap="round"
-      />
+      <circle cx="82.4" cy="39.8" r="3.2" fill="#111111" stroke="#C8A96B" strokeWidth="1.7" />
+      <path d="M80 42.1c6.5 2.1 13 .8 19.5-3.7" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
     </svg>
   );
 }
