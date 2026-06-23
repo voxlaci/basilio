@@ -116,10 +116,10 @@ export const projects = [
 ];
 
 export const counters = [
-  { value: "25+", label: "Years shaping young voices" },
-  { value: "50+", label: "Countries reached through music" },
-  { value: "1000s", label: "Young singers inspired" },
-  { value: "5", label: "Signature artistic projects" }
+  { value: "25+", label: "Years shaping young voices and choral culture" },
+  { value: "50+", label: "Countries reached through festivals, tours and teaching" },
+  { value: "20k+", label: "Singers reached directly in choirs, workshops and masterclasses" },
+  { value: "500k+", label: "Estimated wider reach through concerts, recordings and choral networks" }
 ];
 
 export const masterclassTopics = [
