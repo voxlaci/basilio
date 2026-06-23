@@ -38,22 +38,22 @@ export const navItems = [
 
 export const languageStory = [
   {
-    language: "English",
-    title: "Music that forms people before it forms sound.",
-    body:
-      "Basilio Astulez Duque is presented here as a conductor, educator and artistic catalyst whose work with young voices has become a living model of precision, imagination and human connection."
-  },
-  {
     language: "Euskara",
     title: "Musikak pertsonak eratzen ditu soinua eratu aurretik.",
     body:
       "Basilio Astulez Duque zuzendari, hezitzaile eta ikuspegi artistikoko sortzaile gisa aurkezten da: gazteen ahotsekin egindako lanak zehaztasuna, irudimena eta komunitatea uztartzen ditu."
   },
   {
-    language: "Español",
-    title: "La música forma personas antes de formar sonido.",
+    language: "English",
+    title: "Music that forms people before it forms sound.",
     body:
-      "Basilio Astulez Duque se presenta como director, educador y catalizador artístico: una figura capaz de convertir el trabajo coral juvenil en excelencia, imaginación y transformación humana."
+      "Basilio Astulez Duque is presented here as a conductor, educator and artistic catalyst whose work with young voices has become a living model of precision, imagination and human connection."
+  },
+  {
+    language: "Català",
+    title: "La música forma persones abans de formar so.",
+    body:
+      "Basilio Astulez Duque es presenta com a director, educador i catalitzador artístic: una figura capaç de convertir el treball coral juvenil en excel·lència, imaginació i transformació humana."
   }
 ];
 

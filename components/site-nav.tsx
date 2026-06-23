@@ -11,8 +11,11 @@ export function SiteNav() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#111111]/72 text-white backdrop-blur-xl">
       <nav className="section-shell flex h-16 items-center justify-between">
-        <Link href="/" className="font-display text-xl tracking-[0.18em]">
-          BA
+        <Link href="/" className="flex items-baseline gap-3">
+          <span className="font-display text-xl tracking-[0.18em]">BAD</span>
+          <span className="hidden text-xs uppercase tracking-[0.26em] text-white/58 sm:inline">
+            Basilio Astulez Duque
+          </span>
         </Link>
         <div className="hidden items-center gap-7 text-sm text-white/78 lg:flex">
           {navItems.map((item) => (
