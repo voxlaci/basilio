@@ -63,7 +63,7 @@ export function SocialPulse() {
               className="border border-[#111111]/10 bg-white p-5 transition hover:border-[#C8A96B]"
             >
               <p className="text-sm uppercase tracking-[0.24em] text-[#C8A96B]">Instagram</p>
-              <p className="mt-4 font-display text-3xl">basilio.astulezduque</p>
+              <p className="mt-4 font-display text-3xl">astulezduque</p>
             </Link>
           </div>
         </div>

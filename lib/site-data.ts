@@ -5,13 +5,13 @@ export const siteConfig = {
   sameAs: [
     "https://www.youtube.com/results?search_query=Basilio+Astulez",
     "https://www.facebook.com/basilio.astulezduque",
-    "https://www.instagram.com/basilio.astulezduque/"
+    "https://www.instagram.com/astulezduque/"
   ]
 };
 
 export const socialProfiles = {
   facebook: "https://www.facebook.com/basilio.astulezduque",
-  instagram: "https://www.instagram.com/basilio.astulezduque/"
+  instagram: "https://www.instagram.com/astulezduque/"
 };
 
 export const latestPromotedPost = {
