@@ -1,10 +1,83 @@
 "use client";
 
 import Link from "next/link";
-import { Feather, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useLanguage } from "@/components/language-provider";
 import { localeOptions } from "@/lib/i18n";
+
+function WritingHandMark() {
+  return (
+    <svg
+      className="signature-hand"
+      viewBox="0 0 74 40"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path
+        d="M8 26c5.8-5.8 12.3-6 17.2-1.2 2.9 2.8 6.2 2.8 9.6.5"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2.7"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M16.8 25.6c.3-7.4 5.4-11.4 10.4-8.7 2.9 1.6 3.6 5.1 1.3 8.6"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2.7"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M28.5 25.5c2.2-3.5 4.9-4.9 8.3-3.5 2.8 1.1 3.9 3.5 3.4 6.4"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2.7"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M33.6 20.8 62.4 7.4l4.5 7.6-29.8 13.2"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="m62.4 7.4 6.3-2.4-1.8 10"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M47 15.1 51.9 23"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.7"
+        strokeLinecap="round"
+      />
+      <path
+        d="M42.4 29.2c5.6 1.4 10.6.6 15.1-2.2"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+      />
+      <path
+        d="M55.4 27.3c3.2 1.2 6.4 1 9.8-.7"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.7"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
 
 export function SiteNav() {
   const [open, setOpen] = useState(false);
@@ -24,7 +97,7 @@ export function SiteNav() {
       <nav className="section-shell flex h-16 items-center justify-between">
         <Link href="/" className="flex items-baseline gap-3">
           <span className="signature-mark">
-            <Feather className="signature-pen" size={22} strokeWidth={1.55} />
+            <WritingHandMark />
             <span className="font-script text-3xl leading-none text-[#C8A96B]">Basilio</span>
           </span>
           <span className="hidden text-xs uppercase tracking-[0.26em] text-white/58 sm:inline">

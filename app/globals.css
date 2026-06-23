@@ -40,14 +40,14 @@ body {
   position: relative;
   display: inline-flex;
   align-items: flex-end;
-  gap: 5px;
+  gap: 4px;
   padding-right: 18px;
 }
 
 .signature-mark::after {
   content: "";
   position: absolute;
-  left: 30px;
+  left: 62px;
   right: 4px;
   bottom: -5px;
   height: 1px;
@@ -55,11 +55,13 @@ body {
   transform: rotate(-2deg);
 }
 
-.signature-pen {
+.signature-hand {
+  width: 52px;
+  height: 30px;
   color: #c8a96b;
-  margin-bottom: 2px;
-  transform: rotate(-28deg);
-  transform-origin: center;
+  flex: 0 0 auto;
+  margin-bottom: -2px;
+  opacity: 0.96;
 }
 
 .section-shell {
