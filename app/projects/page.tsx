@@ -1,15 +1,22 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useLanguage } from "@/components/language-provider";
 import { PageHero } from "@/components/page-hero";
+import { pageCopy } from "@/lib/page-i18n";
 import { projects } from "@/lib/site-data";
 
 export default function ProjectsPage() {
+  const { locale } = useLanguage();
+  const copy = pageCopy[locale].projects;
+
   return (
     <main>
       <PageHero
-        kicker="Projects"
-        title="Choirs as spaces of identity, excellence and invention."
-        body="Each project reflects a different part of Basilio's work: youth formation, mature ensemble sound, Basque culture, international visibility and artistic experimentation."
+        kicker={copy.hero.kicker}
+        title={copy.hero.title}
+        body={copy.hero.body}
         image="https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=2200&q=80"
       />
       <section className="py-24">
