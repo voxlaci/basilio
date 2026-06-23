@@ -20,7 +20,7 @@ export const translations = {
       toggle: "Menua ireki edo itxi"
     },
     hero: {
-      kicker: "Zuzendaria · Hezitzailea · Ikuspegia",
+      kicker: "Conductor, educator, visionary artist",
       title: "Basilio Astulez Duque",
       body: "Musikak pertsonak eta komunitateak eraldatzen ditu diziplina, irudimena eta arnasa partekatuaren bidez.",
       primary: "Ezagutu ibilbidea",
@@ -87,7 +87,7 @@ export const translations = {
       toggle: "Toggle menu"
     },
     hero: {
-      kicker: "Conductor · Educator · Visionary",
+      kicker: "Conductor, educator, visionary artist",
       title: "Basilio Astulez Duque",
       body: "Music transforms people and communities through discipline, imagination and shared breath.",
       primary: "Discover the Journey",
@@ -154,7 +154,7 @@ export const translations = {
       toggle: "Obrir o tancar el menu"
     },
     hero: {
-      kicker: "Director · Educador · Visionari",
+      kicker: "Conductor, educator, visionary artist",
       title: "Basilio Astulez Duque",
       body: "La musica transforma persones i comunitats a traves de la disciplina, la imaginacio i la respiracio compartida.",
       primary: "Descobrir el recorregut",

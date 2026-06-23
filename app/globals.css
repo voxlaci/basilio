@@ -44,8 +44,9 @@ body {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(17, 17, 17, 0.82), rgba(17, 17, 17, 0.18) 58%, rgba(17, 17, 17, 0.55)),
-    radial-gradient(circle at 72% 30%, rgba(200, 169, 107, 0.22), transparent 34%);
+    linear-gradient(90deg, rgba(17, 17, 17, 0.9), rgba(17, 17, 17, 0.58) 34%, rgba(17, 17, 17, 0.08) 58%, rgba(17, 17, 17, 0.12)),
+    linear-gradient(0deg, rgba(17, 17, 17, 0.68), transparent 42%),
+    radial-gradient(circle at 62% 34%, rgba(247, 246, 242, 0.12), transparent 28%);
 }
 
 .media-grain {
