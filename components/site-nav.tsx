@@ -104,14 +104,14 @@ export function SiteNav() {
             Basilio Astulez Duque
           </span>
         </Link>
-        <div className="hidden items-center gap-6 text-sm text-white/78 lg:flex">
+        <div className="hidden items-center gap-4 text-sm text-white/78 lg:flex">
           {navItems.map((item) => (
             <Link key={item.href} href={item.href} className="transition hover:text-[#C8A96B]">
               {item.label}
             </Link>
           ))}
         </div>
-        <div className="hidden items-center rounded-full border border-white/15 p-1 text-xs font-semibold lg:flex">
+        <div className="hidden items-center rounded-full border border-white/15 p-1 text-[11px] font-semibold lg:flex">
           {localeOptions.map((option) => (
             <button
               key={option.code}
@@ -122,7 +122,7 @@ export function SiteNav() {
                 locale === option.code ? "bg-[#C8A96B] text-[#111111]" : "text-white/62 hover:text-white"
               }`}
             >
-              {option.short}
+              {option.label}
             </button>
           ))}
         </div>

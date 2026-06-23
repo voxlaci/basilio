@@ -154,7 +154,7 @@ export const testimonials = [
 
 export const news = [
   {
-    title: "Vocalia Taldea opens a major Spanish festival season",
+    title: "Vocalia Taldea opens a major festival season",
     date: "2025-09-04",
     summary:
       "Vocalia Taldea joined Euskadiko Orkestra for Mendelssohn in the opening of the 33rd Otoño Musical Soriano."
@@ -178,7 +178,7 @@ export const verifiedFacts = [
     label: "Vocalia Taldea",
     value: "Founded in 2000",
     detail:
-      "A female vocal ensemble created by Basilio Astulez Duque, described in Spanish press as a national reference with around forty singers and more than twenty awards."
+      "A female vocal ensemble created by Basilio Astulez Duque, described in public press as a national reference with around forty singers and more than twenty awards."
   },
   {
     label: "SJB",
@@ -196,7 +196,7 @@ export const verifiedFacts = [
     label: "Current activity",
     value: "2025 festival visibility",
     detail:
-      "Recent public listings place Basilio's ensembles in major Spanish choral and symphonic-cultural contexts."
+      "Recent public listings place Basilio's ensembles in major choral and symphonic-cultural contexts."
   }
 ];
 
