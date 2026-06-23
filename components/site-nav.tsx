@@ -100,9 +100,6 @@ export function SiteNav() {
             <span className="font-script text-3xl leading-none text-[#C8A96B]">Basilio</span>
             <WritingHandMark />
           </span>
-          <span className="hidden text-xs uppercase tracking-[0.26em] text-white/58 sm:inline">
-            Basilio Astulez Duque
-          </span>
         </Link>
         <div className="hidden items-center gap-4 text-sm text-white/78 lg:flex">
           {navItems.map((item) => (
@@ -122,7 +119,7 @@ export function SiteNav() {
                 locale === option.code ? "bg-[#C8A96B] text-[#111111]" : "text-white/62 hover:text-white"
               }`}
             >
-              {option.label}
+              {option.short}
             </button>
           ))}
         </div>
@@ -160,7 +157,7 @@ export function SiteNav() {
                       : "border-white/15 text-white/70"
                   }`}
                 >
-                  {option.label}
+                  {option.short}
                 </button>
               ))}
             </div>
