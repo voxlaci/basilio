@@ -6,7 +6,6 @@ import { ArrowRight, Play } from "lucide-react";
 import { CounterBand } from "@/components/counter-band";
 import { Hero } from "@/components/hero";
 import { HirePanel } from "@/components/hire-panel";
-import { LanguageStory } from "@/components/language-story";
 import { useLanguage } from "@/components/language-provider";
 import { SocialPulse } from "@/components/social-pulse";
 import { YoutubeFeature } from "@/components/youtube-feature";
@@ -31,8 +30,6 @@ export default function Home() {
       </section>
 
       <CounterBand />
-
-      <LanguageStory />
 
       <SocialPulse />
 
