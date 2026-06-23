@@ -1,10 +1,29 @@
 export const siteConfig = {
+  fullName: "Basilio Astulez Duque",
   ogImage:
     "https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=1200&q=80",
   sameAs: [
     "https://www.youtube.com/results?search_query=Basilio+Astulez",
-    "https://www.facebook.com/search/top?q=Basilio%20Astulez"
+    "https://www.facebook.com/basilio.astulezduque",
+    "https://www.instagram.com/basilio.astulezduque/"
   ]
+};
+
+export const socialProfiles = {
+  facebook: "https://www.facebook.com/basilio.astulezduque",
+  instagram: "https://www.instagram.com/basilio.astulezduque/"
+};
+
+export const latestPromotedPost = {
+  source: "Facebook",
+  profileName: "Basilio Astulez Duque",
+  handle: "@basilio.astulezduque",
+  url: "https://www.facebook.com/basilio.astulezduque",
+  status: "Public profile confirmed. Latest individual posts require Facebook login to view.",
+  title: "Follow the latest work promoted by Basilio",
+  summary:
+    "The site now points directly to Basilio Astulez Duque's own Facebook profile for the most recent posts he promotes. When a public post permalink is available, this module is ready to feature it as the live latest post.",
+  updated: "2026-06-23"
 };
 
 export const navItems = [
@@ -22,19 +41,19 @@ export const languageStory = [
     language: "English",
     title: "Music that forms people before it forms sound.",
     body:
-      "Basilio Astúlez is presented here as a conductor, educator and artistic catalyst whose work with young voices has become a living model of precision, imagination and human connection."
+      "Basilio Astulez Duque is presented here as a conductor, educator and artistic catalyst whose work with young voices has become a living model of precision, imagination and human connection."
   },
   {
     language: "Euskara",
     title: "Musikak pertsonak eratzen ditu soinua eratu aurretik.",
     body:
-      "Basilio Astúlez zuzendari, hezitzaile eta ikuspegi artistikoko sortzaile gisa aurkezten da: gazteen ahotsekin egindako lanak zehaztasuna, irudimena eta komunitatea uztartzen ditu."
+      "Basilio Astulez Duque zuzendari, hezitzaile eta ikuspegi artistikoko sortzaile gisa aurkezten da: gazteen ahotsekin egindako lanak zehaztasuna, irudimena eta komunitatea uztartzen ditu."
   },
   {
     language: "Español",
     title: "La música forma personas antes de formar sonido.",
     body:
-      "Basilio Astúlez se presenta como director, educador y catalizador artístico: una figura capaz de convertir el trabajo coral juvenil en excelencia, imaginación y transformación humana."
+      "Basilio Astulez Duque se presenta como director, educador y catalizador artístico: una figura capaz de convertir el trabajo coral juvenil en excelencia, imaginación y transformación humana."
   }
 ];
 
@@ -144,7 +163,7 @@ export const news = [
     title: "SJB appears at Otoño Polifónico Arandino",
     date: "2025-11-15",
     summary:
-      "San Juan Bautista Abesbatza, conducted by Basilio Astúlez, was presented as a benchmark Basque choral ensemble."
+      "San Juan Bautista Abesbatza, conducted by Basilio Astulez Duque, was presented as a benchmark Basque choral ensemble."
   },
   {
     title: "New international masterclass invitations",
@@ -159,7 +178,7 @@ export const verifiedFacts = [
     label: "Vocalia Taldea",
     value: "Founded in 2000",
     detail:
-      "A female vocal ensemble created by Basilio Astúlez, described in Spanish press as a national reference with around forty singers and more than twenty awards."
+      "A female vocal ensemble created by Basilio Astulez Duque, described in Spanish press as a national reference with around forty singers and more than twenty awards."
   },
   {
     label: "SJB",

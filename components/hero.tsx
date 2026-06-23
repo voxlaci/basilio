@@ -19,7 +19,7 @@ export function Hero() {
             Conductor · Educator · Visionary
           </p>
           <h1 className="font-display text-6xl leading-[0.95] text-balance md:text-8xl lg:text-9xl">
-            Basilio Astúlez
+            Basilio Astulez Duque
           </h1>
           <p className="mt-8 max-w-2xl text-xl leading-8 text-white/78 md:text-2xl">
             Music transforms people and communities through discipline, imagination and shared breath.

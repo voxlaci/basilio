@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="bg-[#111111] py-16 text-[#F7F6F2]">
       <div className="section-shell grid gap-10 md:grid-cols-[1.2fr_1fr]">
         <div>
-          <p className="font-display text-4xl">Basilio Astúlez</p>
+          <p className="font-display text-4xl">Basilio Astulez Duque</p>
           <p className="mt-4 max-w-xl text-sm leading-7 text-white/62">
             Conductor, educator and artistic leader devoted to the transforming force of choral music.
           </p>

@@ -6,6 +6,7 @@ import { Hero } from "@/components/hero";
 import { HirePanel } from "@/components/hire-panel";
 import { LanguageStory } from "@/components/language-story";
 import { Reveal } from "@/components/reveal";
+import { SocialPulse } from "@/components/social-pulse";
 import { YoutubeFeature } from "@/components/youtube-feature";
 import { news, projects, testimonials } from "@/lib/site-data";
 
@@ -40,6 +41,8 @@ export default function Home() {
       <CounterBand />
 
       <LanguageStory />
+
+      <SocialPulse />
 
       <section className="py-24">
         <div className="section-shell">

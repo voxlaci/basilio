@@ -9,12 +9,14 @@ import { siteConfig } from "@/lib/site-data";
 export const metadata: Metadata = {
   metadataBase: new URL("https://basilioastulez.com"),
   title: {
-    default: "Basilio Astúlez | Choral Conductor, Educator & Artistic Visionary",
-    template: "%s | Basilio Astúlez"
+    default: "Basilio Astulez Duque | Choral Conductor, Educator & Artistic Visionary",
+    template: "%s | Basilio Astulez Duque"
   },
   description:
-    "Premium personal website for Basilio Astúlez, internationally active choral conductor, educator, speaker and mentor in youth choir development.",
+    "Premium personal website for Basilio Astulez Duque, internationally active choral conductor, educator, speaker and mentor in youth choir development.",
   keywords: [
+    "Basilio Astulez Duque",
+    "Basilio Astulez",
     "Basilio Astúlez",
     "Choral Conductor",
     "Choir Director",
@@ -27,24 +29,24 @@ export const metadata: Metadata = {
     "International Choral Music"
   ],
   openGraph: {
-    title: "Basilio Astúlez | Music transforms people and communities",
+    title: "Basilio Astulez Duque | Music transforms people and communities",
     description:
-      "A cinematic personal platform for Basilio Astúlez: conductor, educator, speaker and artistic leader.",
+      "A cinematic personal platform for Basilio Astulez Duque: conductor, educator, speaker and artistic leader.",
     type: "website",
     locale: "en_US",
-    siteName: "Basilio Astúlez",
+    siteName: "Basilio Astulez Duque",
     images: [
       {
         url: siteConfig.ogImage,
         width: 1200,
         height: 630,
-        alt: "Basilio Astúlez conducting and mentoring choral musicians"
+        alt: "Basilio Astulez Duque conducting and mentoring choral musicians"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Basilio Astúlez",
+    title: "Basilio Astulez Duque",
     description: "Conductor. Educator. Visionary.",
     images: [siteConfig.ogImage]
   }
@@ -54,7 +56,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Basilio Astúlez",
+    name: "Basilio Astulez Duque",
     jobTitle: ["Choral Conductor", "Educator", "Speaker", "Artistic Director"],
     description:
       "Internationally active choral conductor and educator known for youth choir development, guest conducting, masterclasses and artistic leadership.",

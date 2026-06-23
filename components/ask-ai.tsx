@@ -26,7 +26,7 @@ export function AskAi() {
             <header className="flex items-center justify-between border-b border-[#111111]/10 pb-4">
               <div>
                 <p className="text-sm uppercase tracking-[0.28em] text-[#C8A96B]">Ask AI</p>
-                <h2 className="font-display text-3xl">Basilio assistant</h2>
+                <h2 className="font-display text-3xl">Basilio Astulez Duque assistant</h2>
               </div>
               <button aria-label="Close Ask AI" onClick={() => setOpen(false)} className="grid size-10 place-items-center rounded-full border border-[#111111]/12">
                 <X size={18} />
