@@ -1,18 +1,23 @@
+"use client";
+
 import Link from "next/link";
 import { ArrowUpRight, Camera, Network, RefreshCw } from "lucide-react";
+import { useLanguage } from "@/components/language-provider";
 import { latestPromotedPost, socialProfiles } from "@/lib/site-data";
 
 export function SocialPulse() {
+  const { t } = useLanguage();
+
   return (
     <section className="bg-[#F7F6F2] py-24">
       <div className="section-shell grid gap-10 lg:grid-cols-[0.85fr_1.15fr]">
         <div>
-          <p className="text-sm uppercase tracking-[0.34em] text-[#C8A96B]">Latest Social Pulse</p>
+          <p className="text-sm uppercase tracking-[0.34em] text-[#C8A96B]">{t.social.kicker}</p>
           <h2 className="mt-5 font-display text-5xl leading-tight text-balance md:text-6xl">
-            The latest work promoted by Basilio Astulez Duque.
+            {t.social.heading}
           </h2>
           <p className="mt-6 text-lg leading-8 text-[#111111]/68">
-            This area is designed to surface Basilio's newest promoted post from his own social channels.
+            {t.social.intro}
           </p>
         </div>
         <div className="grid gap-5">
@@ -29,18 +34,18 @@ export function SocialPulse() {
                 <Network size={22} />
               </div>
             </div>
-            <h4 className="mt-8 font-display text-3xl">{latestPromotedPost.title}</h4>
-            <p className="mt-4 text-lg leading-8 text-[#111111]/68">{latestPromotedPost.summary}</p>
+            <h4 className="mt-8 font-display text-3xl">{t.social.title}</h4>
+            <p className="mt-4 text-lg leading-8 text-[#111111]/68">{t.social.summary}</p>
             <div className="mt-6 flex items-center gap-2 text-sm text-[#111111]/55">
               <RefreshCw size={15} />
-              <span>{latestPromotedPost.status}</span>
+              <span>{t.social.status}</span>
             </div>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 href={latestPromotedPost.url}
                 className="inline-flex items-center gap-2 rounded-full bg-[#111111] px-5 py-3 text-sm font-semibold text-white"
               >
-                Open Facebook <ArrowUpRight size={16} />
+                {t.social.openFacebook} <ArrowUpRight size={16} />
               </Link>
               <Link
                 href={socialProfiles.instagram}

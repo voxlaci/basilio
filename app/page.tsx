@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Play } from "lucide-react";
@@ -5,22 +7,21 @@ import { CounterBand } from "@/components/counter-band";
 import { Hero } from "@/components/hero";
 import { HirePanel } from "@/components/hire-panel";
 import { LanguageStory } from "@/components/language-story";
+import { useLanguage } from "@/components/language-provider";
 import { SocialPulse } from "@/components/social-pulse";
 import { YoutubeFeature } from "@/components/youtube-feature";
 import { news, projects, testimonials } from "@/lib/site-data";
 
 export default function Home() {
+  const { t } = useLanguage();
+
   return (
     <main>
       <Hero />
 
       <section className="bg-[#111111] py-16 text-[#F7F6F2]">
         <div className="section-shell grid gap-5 md:grid-cols-3">
-          {[
-            ["Listening", "A rehearsal culture built on attention, precision and trust."],
-            ["Formation", "Young singers are treated as artists with voice, body and imagination."],
-            ["Transformation", "Music becomes a shared practice for discipline, belonging and courage."]
-          ].map(([title, body]) => (
+          {t.values.map(([title, body]) => (
             <article key={title} className="border-l border-[#C8A96B]/55 pl-5">
               <p className="font-display text-3xl">{title}</p>
               <p className="mt-3 leading-7 text-white/62">{body}</p>
@@ -39,11 +40,11 @@ export default function Home() {
         <div className="section-shell">
           <div className="mb-12 flex flex-wrap items-end justify-between gap-6">
             <div>
-              <p className="text-sm uppercase tracking-[0.34em] text-[#C8A96B]">Featured Projects</p>
-              <h2 className="mt-4 font-display text-5xl">Living artistic laboratories</h2>
+              <p className="text-sm uppercase tracking-[0.34em] text-[#C8A96B]">{t.home.featuredKicker}</p>
+              <h2 className="mt-4 font-display text-5xl">{t.home.featuredTitle}</h2>
             </div>
             <Link href="/projects" className="inline-flex items-center gap-2 text-sm font-semibold">
-              View all projects <ArrowRight size={16} />
+              {t.home.viewAll} <ArrowRight size={16} />
             </Link>
           </div>
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-5">
@@ -68,11 +69,11 @@ export default function Home() {
       <section className="media-grain py-24 text-white">
         <div className="section-shell grid items-center gap-10 lg:grid-cols-[1fr_0.8fr]">
           <div>
-            <p className="text-sm uppercase tracking-[0.34em] text-[#C8A96B]">Video Highlight</p>
-            <h2 className="mt-4 font-display text-5xl text-balance">A rehearsal can become a turning point.</h2>
+            <p className="text-sm uppercase tracking-[0.34em] text-[#C8A96B]">{t.home.videoKicker}</p>
+            <h2 className="mt-4 font-display text-5xl text-balance">{t.home.videoTitle}</h2>
           </div>
           <div className="grid aspect-video place-items-center border border-white/25 bg-black/35">
-            <button aria-label="Play featured video" className="grid size-20 place-items-center rounded-full bg-[#C8A96B] text-[#111111]">
+            <button aria-label={t.home.playVideo} className="grid size-20 place-items-center rounded-full bg-[#C8A96B] text-[#111111]">
               <Play fill="currentColor" />
             </button>
           </div>
@@ -83,7 +84,7 @@ export default function Home() {
 
       <section className="bg-[#111111] py-24 text-[#F7F6F2]">
         <div className="section-shell">
-          <p className="text-sm uppercase tracking-[0.34em] text-[#C8A96B]">Testimonials</p>
+          <p className="text-sm uppercase tracking-[0.34em] text-[#C8A96B]">{t.home.testimonials}</p>
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {testimonials.map((item) => (
               <article key={item.name} className="border border-white/10 p-7">
@@ -99,8 +100,8 @@ export default function Home() {
         <div className="section-shell">
           <div className="mb-10 flex items-end justify-between gap-6">
             <div>
-              <p className="text-sm uppercase tracking-[0.34em] text-[#C8A96B]">Latest News</p>
-              <h2 className="mt-4 font-display text-5xl">Recent activity</h2>
+              <p className="text-sm uppercase tracking-[0.34em] text-[#C8A96B]">{t.home.latestNews}</p>
+              <h2 className="mt-4 font-display text-5xl">{t.home.recentActivity}</h2>
             </div>
           </div>
           <div className="grid gap-5 md:grid-cols-3">

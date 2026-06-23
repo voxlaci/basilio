@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { AskAi } from "@/components/ask-ai";
 import { Footer } from "@/components/footer";
+import { LanguageProvider } from "@/components/language-provider";
 import { ShareRail } from "@/components/share-rail";
 import { SiteNav } from "@/components/site-nav";
 import { siteConfig } from "@/lib/site-data";
@@ -80,11 +81,13 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <SiteNav />
-        <ShareRail />
-        {children}
-        <Footer />
-        <AskAi />
+        <LanguageProvider>
+          <SiteNav />
+          <ShareRail />
+          {children}
+          <Footer />
+          <AskAi />
+        </LanguageProvider>
       </body>
     </html>
   );

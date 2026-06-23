@@ -2,6 +2,7 @@
 
 import { motion, useInView, useMotionValue, useTransform, animate } from "framer-motion";
 import { useEffect, useRef } from "react";
+import { useLanguage } from "@/components/language-provider";
 import { counters } from "@/lib/site-data";
 
 function CountLabel({ value }: { value: string }) {
@@ -28,13 +29,15 @@ function CountLabel({ value }: { value: string }) {
 }
 
 export function CounterBand() {
+  const { t } = useLanguage();
+
   return (
     <section className="bg-[#111111] py-20 text-[#F7F6F2]">
       <div className="section-shell grid gap-8 md:grid-cols-4">
-        {counters.map((counter) => (
+        {counters.map((counter, index) => (
           <div key={counter.label} className="border-l border-[#C8A96B]/45 pl-5">
             <CountLabel value={counter.value} />
-            <p className="mt-3 text-sm leading-6 text-white/62">{counter.label}</p>
+            <p className="mt-3 text-sm leading-6 text-white/62">{t.counters[index]}</p>
           </div>
         ))}
       </div>
