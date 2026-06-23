@@ -6,80 +6,6 @@ import { useState } from "react";
 import { useLanguage } from "@/components/language-provider";
 import { localeOptions } from "@/lib/i18n";
 
-function WritingHandMark() {
-  return (
-    <svg
-      className="signature-hand"
-      viewBox="0 0 120 72"
-      aria-hidden="true"
-      focusable="false"
-    >
-      <path
-        d="M18 48c6.2-12.4 15.8-15 25.4-7.1 5.2 4.3 11.5 4.5 17.8.6 5.7-3.5 12.3-3.3 18.9 1.1l-5.6 11.6c-14.7 7.1-31.7 7-50.8-.2-4.4-1.7-6.3-3.6-5.7-6Z"
-        fill="#F7F6F2"
-        stroke="currentColor"
-        strokeWidth="3.2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M31.5 42.4c-3.6-8.8.9-18.4 8.6-17.1 5 .9 7.7 6.5 4.8 14.7"
-        fill="#F7F6F2"
-        stroke="currentColor"
-        strokeWidth="3.2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M45.2 39.4c-1.9-9.5 3.5-17.2 10.2-14.2 4.2 1.9 5.4 7.2 2.3 14.8"
-        fill="#F7F6F2"
-        stroke="currentColor"
-        strokeWidth="3.2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M59.5 40.1c-.9-7.9 4.8-13.2 10.3-9.7 3.3 2.1 4.2 6.2 2.2 11.1"
-        fill="#F7F6F2"
-        stroke="currentColor"
-        strokeWidth="3.2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M68.5 42.8c2.4-7 9.8-8.6 14.3-2.6"
-        fill="#F7F6F2"
-        stroke="currentColor"
-        strokeWidth="3.2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M52 33.6 96.6 8.5l7.2 11.3-47.5 25.7Z"
-        fill="#111111"
-        stroke="#C8A96B"
-        strokeWidth="2.4"
-      />
-      <path
-        d="m96.6 8.5 13-4.5-5.8 15.8Z"
-        fill="#F7F6F2"
-        stroke="#C8A96B"
-        strokeWidth="2.4"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M72 22.1 78.5 34"
-        fill="none"
-        stroke="#C8A96B"
-        strokeWidth="2"
-        strokeLinecap="round"
-      />
-      <circle cx="82.4" cy="39.8" r="3.2" fill="#111111" stroke="#C8A96B" strokeWidth="1.7" />
-      <path d="M80 42.1c6.5 2.1 13 .8 19.5-3.7" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
-    </svg>
-  );
-}
-
 export function SiteNav() {
   const [open, setOpen] = useState(false);
   const { locale, setLocale, t } = useLanguage();
@@ -99,7 +25,6 @@ export function SiteNav() {
         <Link href="/" className="flex items-baseline gap-3">
           <span className="signature-mark">
             <span className="font-script text-3xl leading-none text-[#C8A96B]">Basilio</span>
-            <WritingHandMark />
           </span>
         </Link>
         <div className="hidden items-center gap-4 text-sm text-white/78 lg:flex">

@@ -40,31 +40,18 @@ body {
   position: relative;
   display: inline-flex;
   align-items: flex-end;
-  gap: 0;
-  padding-right: 5px;
+  padding-right: 14px;
 }
 
 .signature-mark::after {
   content: "";
   position: absolute;
-  left: 3px;
-  width: 86px;
+  left: 5px;
+  width: 88px;
   bottom: -5px;
   height: 1.5px;
   background: linear-gradient(90deg, rgba(200, 169, 107, 0), rgba(200, 169, 107, 0.82) 18%, rgba(200, 169, 107, 0.56) 82%, rgba(200, 169, 107, 0));
   transform: rotate(-2deg);
-}
-
-.signature-hand {
-  width: 82px;
-  height: 46px;
-  color: #c8a96b;
-  flex: 0 0 auto;
-  margin-bottom: -13px;
-  margin-left: -17px;
-  opacity: 0.96;
-  transform: translateY(3px) rotate(2deg);
-  transform-origin: left bottom;
 }
 
 .section-shell {
