@@ -30,6 +30,12 @@ body {
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
+.font-script {
+  font-family: "Snell Roundhand", "Segoe Script", "Brush Script MT", cursive;
+  font-style: italic;
+  letter-spacing: 0;
+}
+
 .section-shell {
   width: min(1180px, calc(100% - 40px));
   margin-inline: auto;

@@ -23,7 +23,7 @@ export function SiteNav() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#111111]/72 text-white backdrop-blur-xl">
       <nav className="section-shell flex h-16 items-center justify-between">
         <Link href="/" className="flex items-baseline gap-3">
-          <span className="font-display text-xl tracking-[0.18em]">BAD</span>
+          <span className="font-script text-3xl leading-none text-[#C8A96B]">Basilio</span>
           <span className="hidden text-xs uppercase tracking-[0.26em] text-white/58 sm:inline">
             Basilio Astulez Duque
           </span>
