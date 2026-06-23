@@ -97,8 +97,8 @@ export function SiteNav() {
       <nav className="section-shell flex h-16 items-center justify-between">
         <Link href="/" className="flex items-baseline gap-3">
           <span className="signature-mark">
-            <WritingHandMark />
             <span className="font-script text-3xl leading-none text-[#C8A96B]">Basilio</span>
+            <WritingHandMark />
           </span>
           <span className="hidden text-xs uppercase tracking-[0.26em] text-white/58 sm:inline">
             Basilio Astulez Duque
