@@ -24,24 +24,24 @@ export function ShareRail() {
   };
 
   return (
-    <aside className="fixed left-3 top-1/2 z-40 hidden -translate-y-1/2 flex-col items-center gap-2 rounded-full border border-white/10 bg-[#111111]/82 p-2 text-white shadow-2xl shadow-black/25 backdrop-blur-xl md:flex">
+    <aside className="fixed left-3 top-1/2 z-40 flex -translate-y-1/2 flex-col items-center gap-2 rounded-full border border-white/10 bg-[#111111]/82 p-2 text-white shadow-2xl shadow-black/25 backdrop-blur-xl">
       <button
         aria-label="Share this page"
         onClick={share}
-        className="grid size-10 place-items-center rounded-full transition hover:bg-[#C8A96B] hover:text-[#111111]"
+        className="grid size-11 place-items-center rounded-full bg-[#C8A96B] text-[#111111] transition hover:bg-[#F7F6F2]"
       >
         <Share2 size={18} />
       </button>
       <a
         aria-label="Share by email"
-        className="grid size-10 place-items-center rounded-full transition hover:bg-[#C8A96B] hover:text-[#111111]"
+        className="hidden size-10 place-items-center rounded-full transition hover:bg-[#C8A96B] hover:text-[#111111] md:grid"
         href="mailto:?subject=Basilio%20Ast%C3%BAlez&body=https%3A%2F%2Fbasilioastulez.com"
       >
         <Mail size={17} />
       </a>
       <a
         aria-label="Share on LinkedIn"
-        className="grid size-10 place-items-center rounded-full transition hover:bg-[#C8A96B] hover:text-[#111111]"
+        className="hidden size-10 place-items-center rounded-full transition hover:bg-[#C8A96B] hover:text-[#111111] md:grid"
         href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fbasilioastulez.com"
       >
         <Users size={17} />
@@ -49,7 +49,7 @@ export function ShareRail() {
       <button
         aria-label="Copy link"
         onClick={share}
-        className="grid size-10 place-items-center rounded-full transition hover:bg-[#C8A96B] hover:text-[#111111]"
+        className="hidden size-10 place-items-center rounded-full transition hover:bg-[#C8A96B] hover:text-[#111111] md:grid"
       >
         <Copy size={17} />
       </button>
