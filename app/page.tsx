@@ -5,7 +5,6 @@ import { CounterBand } from "@/components/counter-band";
 import { Hero } from "@/components/hero";
 import { HirePanel } from "@/components/hire-panel";
 import { LanguageStory } from "@/components/language-story";
-import { Reveal } from "@/components/reveal";
 import { SocialPulse } from "@/components/social-pulse";
 import { YoutubeFeature } from "@/components/youtube-feature";
 import { news, projects, testimonials } from "@/lib/site-data";
@@ -15,26 +14,18 @@ export default function Home() {
     <main>
       <Hero />
 
-      <section className="bg-[#F7F6F2] py-24">
-        <div className="section-shell grid items-center gap-12 lg:grid-cols-[0.85fr_1fr]">
-          <Reveal>
-            <p className="font-display text-4xl leading-tight text-balance md:text-6xl">
-              “Music is not only something we perform. It is something that transforms us.”
-            </p>
-          </Reveal>
-          <Reveal delay={0.12}>
-            <div className="grid gap-5 text-lg leading-8 text-[#111111]/72">
-              <p>
-                Basilio Astúlez builds artistic communities where young singers learn to listen,
-                risk, refine and belong. His work joins rigorous technique with a rare instinct for
-                emotional truth.
-              </p>
-              <p>
-                This platform presents Basilio as conductor, educator, guest artist and mentor for
-                choirs, institutions and festivals seeking a deeper kind of musical encounter.
-              </p>
-            </div>
-          </Reveal>
+      <section className="bg-[#111111] py-16 text-[#F7F6F2]">
+        <div className="section-shell grid gap-5 md:grid-cols-3">
+          {[
+            ["Listening", "A rehearsal culture built on attention, precision and trust."],
+            ["Formation", "Young singers are treated as artists with voice, body and imagination."],
+            ["Transformation", "Music becomes a shared practice for discipline, belonging and courage."]
+          ].map(([title, body]) => (
+            <article key={title} className="border-l border-[#C8A96B]/55 pl-5">
+              <p className="font-display text-3xl">{title}</p>
+              <p className="mt-3 leading-7 text-white/62">{body}</p>
+            </article>
+          ))}
         </div>
       </section>
 
