@@ -9,7 +9,7 @@ export function Hero() {
   return (
     <section className="hero-video relative min-h-screen overflow-hidden bg-[#111111] text-white">
       <img
-        className="absolute inset-0 h-full w-full object-cover object-[72%_center] opacity-[0.88] sm:object-[68%_center] lg:object-[74%_center]"
+        className="absolute inset-0 h-full w-full object-cover object-[28%_center] opacity-[0.88] sm:object-[68%_center] lg:object-[74%_center]"
         src="/media/basilio-current.jpg"
         alt="Basilio Astulez Duque"
       />
