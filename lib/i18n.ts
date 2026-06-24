@@ -2,8 +2,8 @@ export type Locale = "eu" | "en" | "ca";
 
 export const localeOptions: { code: Locale; short: string; label: string }[] = [
   { code: "eu", short: "Eusk", label: "Euskara" },
-  { code: "en", short: "EN", label: "English" },
-  { code: "ca", short: "CA", label: "Català" }
+  { code: "en", short: "Eng", label: "English" },
+  { code: "ca", short: "Cat", label: "Català" }
 ];
 
 export const translations = {
