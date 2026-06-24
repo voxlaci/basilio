@@ -55,13 +55,30 @@ export function SiteNav() {
         >
           {t.nav.invite}
         </Link>
-        <button
-          aria-label={t.nav.toggle}
-          className="grid size-10 place-items-center rounded-full border border-white/15 lg:hidden"
-          onClick={() => setOpen((value) => !value)}
-        >
-          {open ? <X size={18} /> : <Menu size={18} />}
-        </button>
+        <div className="flex items-center gap-2 lg:hidden">
+          <div className="flex items-center rounded-full border border-white/15 p-1 text-[10px] font-semibold">
+            {localeOptions.map((option) => (
+              <button
+                key={option.code}
+                type="button"
+                aria-label={option.label}
+                onClick={() => setLocale(option.code)}
+                className={`rounded-full px-2.5 py-1.5 transition ${
+                  locale === option.code ? "bg-[#C8A96B] text-[#111111]" : "text-white/62 hover:text-white"
+                }`}
+              >
+                {option.short}
+              </button>
+            ))}
+          </div>
+          <button
+            aria-label={t.nav.toggle}
+            className="grid size-10 place-items-center rounded-full border border-white/15"
+            onClick={() => setOpen((value) => !value)}
+          >
+            {open ? <X size={18} /> : <Menu size={18} />}
+          </button>
+        </div>
       </nav>
       {open ? (
         <div className="border-t border-white/10 bg-[#111111] px-5 py-5 lg:hidden">
@@ -71,22 +88,6 @@ export function SiteNav() {
                 {item.label}
               </Link>
             ))}
-            <div className="flex items-center gap-2 pt-2">
-              {localeOptions.map((option) => (
-                <button
-                  key={option.code}
-                  type="button"
-                  onClick={() => setLocale(option.code)}
-                  className={`rounded-full border px-3 py-1.5 text-xs font-semibold ${
-                    locale === option.code
-                      ? "border-[#C8A96B] bg-[#C8A96B] text-[#111111]"
-                      : "border-white/15 text-white/70"
-                  }`}
-                >
-                  {option.short}
-                </button>
-              ))}
-            </div>
           </div>
         </div>
       ) : null}
